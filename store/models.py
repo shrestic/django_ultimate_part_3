@@ -41,6 +41,17 @@ class Product(models.Model):
 
     class Meta:
         ordering = ['title']
+        
+class ProductImage(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='images')
+    image = models.ImageField(upload_to='store/images')
+
+    def __str__(self) -> str:
+        return self.product.title
+
+    class Meta:
+        verbose_name = 'Product Image'
+        verbose_name_plural = 'Product Images'
 
 
 class Customer(models.Model):
