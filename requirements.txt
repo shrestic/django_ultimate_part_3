@@ -7,4 +7,6 @@ pillow==10.4.0
 django-filter==25.1
 django-debug-toolbar==5.0.1
 psycopg2-binary==2.9.10
-django-templated-mail==1.1.1 
+django-templated-mail==1.1.1
+pytest==8.3.5
+pytest-django==4.10.0 
