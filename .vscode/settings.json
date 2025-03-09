@@ -1,6 +1,10 @@
 {
     "cSpell.words": [
-        "filterset"
+        "filterset",
+        "herokuapp",
+        "MAILGUN",
+        "REDISCLOUD",
+        "shrestic"
     ],
     "python.testing.pytestArgs": [
         "."
